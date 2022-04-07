@@ -1,0 +1,15 @@
+node{
+stage("Build"){
+echo "In build"
+
+}
+stage("Test"){
+
+echo "In Test"
+
+}
+
+
+
+
+}
