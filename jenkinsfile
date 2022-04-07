@@ -1,25 +1,9 @@
 node{
-agent { 
-    
-    docker { 
-    
-    image 'python:3.5.1' 
-     args '-u root:root'
-    
-    
-    } 
-    
+docker.image('node:7-alpine').inside {
+        stage('Test') {
+            echo "In Test"
+        }
     }
-stage("Build"){
-echo "In build"
-
-}
-stage("Test"){
-
-echo "In Test"
-
-}
-
 
 
 
