@@ -1,5 +1,5 @@
 node{
-docker.image('node:7-alpine').inside {
+docker.image('python:3.6.4').inside {
         stage('Test') {
             echo "In Test"
         }
